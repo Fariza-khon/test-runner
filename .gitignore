@@ -5,4 +5,4 @@ env/
 ENV/
 .venv*/
 myenv/
-*cpython*
+__pycache__/
