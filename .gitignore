@@ -1,1 +1,8 @@
-
+# Виртуальные окружения
+.venv/
+venv/
+env/
+ENV/
+.venv*/
+myenv/
+*cpython*

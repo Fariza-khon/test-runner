@@ -9,6 +9,8 @@ from pathlib import Path
 class TestRunner:
     """Запускает pytest в указанном проекте и генерирует HTML-отчёт."""
 
+    __test__ = False
+
     def __init__(self, project_path: str) -> None:
         """Инициализация"""
         self.project_path = Path(project_path)
