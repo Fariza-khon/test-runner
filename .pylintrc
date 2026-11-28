@@ -1,0 +1,9 @@
+[MASTER]
+ignore=htmlcov,.venv,build,dist
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=7
+max-attributes=10
