@@ -1,0 +1,22 @@
+# .pre-commit-config.yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0  # Версия хуков
+    hooks:
+      - id: trailing-whitespace  # Удаляет лишние пробелы в конце строк
+      - id: end-of-file-fixer    # Добавляет пустую строку в конец файла, если ее нет
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0  # Версия flake8
+    hooks:
+      - id: flake8
+        name: flake8 (python)
+        files: \.py$  # Проверять только файлы .py
+
+  - repo: https://github.com/pycqa/pylint
+    rev: v3.0.3  # Версия pylint
+    hooks:
+      - id: pylint
+        name: pylint (python)
+        args: [--rcfile=.pylintrc]
+        files: \.py$  # Проверять только файлы .py
